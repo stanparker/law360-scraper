@@ -108,7 +108,7 @@ class Scraper(object):
 		'From WBEZ Chicago it\'s Cereal. One bowl eaten week by week.',
 		'You just jumped over jumpman.',
 		'If walked on the runway in high heels in front of the whole town I\'d fall down. And my momma\'d cry, when she realized, I ain\'t pageant material.',
-		'I feel in love in the back of a cop car. I couldn\'t see your eyes because the damn lights were shining in my eyes.'
+		'I fell in love in the back of a cop car. I couldn\'t see your eyes because the damn lights were shining in my eyes.'
 	]
 
 
