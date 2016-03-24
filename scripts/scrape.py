@@ -127,7 +127,7 @@ class Scraper(object):
 
 		page = urllib2.urlopen(url)
 
-		soup = bs(page, 'html.parser')
+		soup = bs(page, 'html5lib')
 
 		tables = soup.find_all('tbody')
 

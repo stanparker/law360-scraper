@@ -5,6 +5,12 @@ Written in Node.js and Python, this tool is used to collect cases by district an
 
 The point of this program? Less wasted time copy and pasting and more time getting that money.
 
+Commands for right now:
+
+`cd desktop`
+`python scripts/scrape.py`
+`node scripts/convert.js`
+
 ![image](https://media.giphy.com/media/l41lIkTqv4NTHPktO/giphy.gif)
 
 ## Installation

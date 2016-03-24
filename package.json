@@ -12,6 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "fs": "0.0.2",
+    "json-2-csv": "^2.0.18",
     "jsonfile": "^2.2.3",
     "underscore": "^1.8.3"
   }
