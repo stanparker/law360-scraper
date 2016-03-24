@@ -1,0 +1,17 @@
+{
+  "name": "law360 scraper",
+  "version": "1.0.0",
+  "description": "Made with love.",
+  "main": "convert.js",
+  "scripts": {
+    "run": "node convert.js"
+  },
+  "keywords": [],
+  "author": "Chris Alcantara",
+  "license": "MIT",
+  "dependencies": {
+    "fs": "0.0.2",
+    "jsonfile": "^2.2.3",
+    "underscore": "^1.8.3"
+  }
+}
