@@ -4,6 +4,7 @@ import json
 import random
 import time
 
+import sys
 
 from datetime import datetime
 from collections import defaultdict
@@ -11,12 +12,11 @@ from collections import defaultdict
 from bs4 import BeautifulSoup as bs
 
 
-current_date = time.strftime('%m/%d/%y')
-
-current_date = datetime.strptime(current_date, '%m/%d/%y')
-06
-
 class Scraper(object):
+
+	current_date = time.strftime('%m/%d/%y')
+
+	current_date = datetime.strptime(current_date, '%m/%d/%y')
 
 	DISTRICTS = {
 		"01": "District 1",
@@ -102,7 +102,13 @@ class Scraper(object):
 		'This is too easy.',
 		'I wanted to be a flat screen TV when I grew up, but I became a computer instead.',
 		'Is it time to go yet?',
-		'Take a second to enjoy the fact you don\'t have to do this by hand.'
+		'Take a second to enjoy the fact you don\'t have to do this by hand.',
+		'Here\'s a joke while you wait: What do you call a camel with three humps? Pregnant!',
+		'Beyonce has 24 hours in a day. So do you.',
+		'From WBEZ Chicago it\'s Cereal. One bowl eaten week by week.',
+		'You just jumped over jumpman.',
+		'If walked on the runway in high heels in front of the whole town I\'d fall down. And my momma\'d cry, when she realized, I ain\'t pageant material.',
+		'I feel in love in the back of a cop car. I couldn\'t see your eyes because the damn lights were shining in my eyes.'
 	]
 
 
@@ -111,7 +117,7 @@ class Scraper(object):
 		m = str(self.month)
 		d = str(self.day)
 		y = str(self.year)
-		
+
 		tables = self.scrape(m, d, y)
 
 		case_numbers = self.get_case_numbers(tables)
@@ -138,7 +144,9 @@ class Scraper(object):
 
 		cases = []
 
-		for i in range(0,28):
+		print len(tables)
+
+		for i in range(0,len(tables)):
 			
 			links = tables[i].find_all('a')
 
