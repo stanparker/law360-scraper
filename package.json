@@ -1,8 +1,9 @@
 {
-  "name": "law360 scraper",
+  "name": "law360-scraper",
   "version": "1.0.0",
   "description": "Made with love.",
   "main": "convert.js",
+  "private": true,
   "scripts": {
     "run": "node convert.js"
   },
