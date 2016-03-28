@@ -101,14 +101,18 @@ class Scraper(object):
 		'Giiiddddyyy up!',
 		'This is too easy.',
 		'I wanted to be a flat screen TV when I grew up, but I became a computer instead.',
-		'Is it time to go yet?',
+		'Is it time to go home yet?',
 		'Take a second to enjoy the fact you don\'t have to do this by hand.',
 		'Here\'s a joke while you wait: What do you call a camel with three humps? Pregnant!',
-		'Beyonce has 24 hours in a day. So do you.',
+		'Beyonce has 24 hours in a day. You do too.',
 		'From WBEZ Chicago it\'s Cereal. One bowl eaten week by week.',
 		'You just jumped over jumpman.',
 		'If walked on the runway in high heels in front of the whole town I\'d fall down. And my momma\'d cry, when she realized, I ain\'t pageant material.',
-		'I fell in love in the back of a cop car. I couldn\'t see your eyes because the damn lights were shining in my eyes.'
+		'I fell in love in the back of a cop car. I couldn\'t see your eyes because the damn lights were shining in my eyes.',
+		'I tried to make ramen in the coffee pot, and I broke everything.',
+		'I typed your symptoms into the thing up here, and it says you could have network connectivity problems.',
+		'There\'s only one thing I hate more than lying: skim milk. Which is water that\'s lying about being milk.',
+		'I really only listen to, like, German death reggae and Halloween sound effects records from the 1950s.'
 	]
 
 
@@ -118,7 +122,7 @@ class Scraper(object):
 		d = str(self.day)
 		y = str(self.year)
 
-		tables = self.scrape(m, d, y)
+		tables = self.scrape(m,d,y)
 
 		case_numbers = self.get_case_numbers(tables)
 
@@ -129,7 +133,7 @@ class Scraper(object):
 
 		url = "http://stanparker.net/law360/texas.php?date=" + month + '/' + day + '/' + year
 
-		print 'Collecting data...' + random.choice(self.message)
+		print 'Collecting data... ' + random.choice(self.message)
 
 		page = urllib2.urlopen(url)
 

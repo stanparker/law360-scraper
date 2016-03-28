@@ -1,3 +1,8 @@
+BeautifulSoup==3.2.1
 beautifulsoup4==4.4.1
+ecdsa==0.13
+Fabric==1.10.2
 html5lib==0.9999999
+paramiko==1.16.0
+pycrypto==2.6.1
 six==1.10.0
